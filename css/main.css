@@ -1,0 +1,218 @@
+
+:root{
+    
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.menu-btn{
+	position: relative;
+	justify-content:center;
+	align-items:center;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+    margin-top: 45px;
+}
+
+.btn-burger{
+	width: 30px;
+	height: 2px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+}
+
+.btn-burger::before,
+.btn-burger::after{
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 2px;	
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+
+}
+
+.btn-burger::before{
+	transform: translateY(-9px);
+}
+
+.btn-burger::after{
+	transform: translateY(9px);
+}
+
+
+.logo{
+    margin-top: 20px;
+}
+.active{
+    color: #db780e;
+}
+.bgText{
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+    text-align: center;
+}
+.bgText h2{
+    font-size: 6em;
+    color: #db780e;
+    letter-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bgText p{
+    font-size: 35px;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.articleImg{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+}
+
+.articleImg:hover{
+    filter: grayscale();
+}
+.articleIcon{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 75px;
+   height: 75px;
+}
+.sectionTitle{
+    color: #db780e;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-left: -75px;
+}
+.title{
+    letter-spacing: 2px;
+}
+
+.moreBooks{
+    font-size: 2em;
+    color: #8dc7e0;
+    text-transform: uppercase;
+}
+.a{
+    margin: 100px 0 0 45px;
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #222222;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:column;
+    overflow: hidden;
+}
+
+.contactTitle{
+    color: #db780e;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.formEImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.imgContact{
+    width: 45%;
+}
+.imgNigga{
+    width: 100%;
+}
+
+.form{
+    width: 45%;
+    
+}
+
+@media screen and (max-width: 1000px){
+    
+    .bgText h2{
+        font-size: 3em;
+    }
+    .bgText p{
+        font-size: 25px;
+    }
+    .articleImg{
+        width: 100%;
+    }
+    .sectionTitle{
+        margin-top: 25px;
+        font-size: 1.5em;
+        margin-left: 0;
+    }
+    .moreBooks{
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    .imgContact{
+        display: none;
+    }
+    .form{
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 11%;
+    }
+    .contact{
+        display: block;
+    }
+    .articleIcon{
+       bottom: 34%;
+    }
+
+    .contact{
+        height: 90vh;
+    }
+        
+}
+
+@media screen and (max-width: 600px){
+    
+    .bgText h2{
+        font-size: 2em;
+    }
+    .bgText p{
+        font-size: 18px;
+    }
+    .articleIcon{
+       bottom: 46%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .articleIcon{
+        bottom: 47%;
+     }
+}
+@media screen and (max-width: 400px){
+    .articleIcon{
+        bottom: 55%;
+     }
+}
+
+@media screen and (max-width: 350px){
+    .articleIcon{
+        bottom: 65%;
+     }
+}
