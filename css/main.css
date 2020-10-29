@@ -2,94 +2,112 @@
 :root{
     
 }
-header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
+html{
+    scroll-behavior: smooth;
 }
-
+/*NAV*/
+nav{
+    box-shadow: initial;
+}
+/*boton menu responsive*/
 .menu-btn{
-	position: relative;
-	justify-content:center;
-	align-items:center;
-	width: 40px;
-	height: 40px;
-	cursor: pointer;
+    position: relative;
+    justify-content:center;
+    align-items:center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
     margin-top: 45px;
 }
 
 .btn-burger{
-	width: 30px;
-	height: 2px;
-	background: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
 }
 
 .btn-burger::before,
 .btn-burger::after{
-	content: '';
-	position: absolute;
-	width: 30px;
-	height: 2px;	
-	background: #fff;
-	border-radius: 5px;
-	box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;    
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
 
 }
 
 .btn-burger::before{
-	transform: translateY(-9px);
+    transform: translateY(-9px);
 }
 
 .btn-burger::after{
-	transform: translateY(9px);
+    transform: translateY(9px);
 }
 
 
 .logo{
     margin-top: 20px;
 }
+
 .active{
     color: #db780e;
 }
+/*END NAV*/
+
+/*INDEX*/
+.indexHeader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/index/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.card{
+
+    overflow: hidden;
+}
+
+.cardHeight{
+    max-height: 300px;
+    height: 100%;
+}
 .bgText{
-    position: absolute;
-    bottom: 10%;
-    left: 25%;
+    width: 100%;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
     text-align: center;
 }
 .bgText h2{
-    font-size: 6em;
+    font-size: 4em;
     color: #db780e;
-    letter-spacing: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 15px;
+    margin-bottom: -25px;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .bgText p{
-    font-size: 35px;
+    font-size: 2.5em;
     color: #FFFFFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
-.articleImg{
+/*Seccion de nuevo podcast y articulos*/
+.entradas{
     width: 100%;
-    position: relative;
-    overflow: hidden;
-    transition: 1s ease;
-}
-
-.articleImg:hover{
-    filter: grayscale();
-}
-.articleIcon{
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   width: 75px;
-   height: 75px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .sectionTitle{
     color: #db780e;
@@ -97,122 +115,440 @@ header{
     font-size: 2em;
     margin-left: -75px;
 }
-.title{
-    letter-spacing: 2px;
+.articleImg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+}
+.articleImg:hover{
+    transform: scale(1.1);
 }
 
-.moreBooks{
+.title{
+    letter-spacing: 2px;
+}   
+.articleIcon{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+.more{
     font-size: 2em;
     color: #8dc7e0;
     text-transform: uppercase;
 }
-.a{
-    margin: 100px 0 0 45px;
-}
 
-.contact{
-    width: 100%;
-    height: 100vh;
-    background-color: #222222;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction:column;
-    overflow: hidden;
-}
+/*Seccion de libros*/
 
-.contactTitle{
+.tituloBook{
     color: #db780e;
     text-transform: uppercase;
-    font-size: 2.5em;
+    font-size: 3em;
+}
+.portadaBook{
+    height: 350px;
+
+}
+.btn-block{
+    width: 100%;
+} 
+
+.form{
+    width: 100%;
+    height: 100%;
+    background-color: #2E2E2E;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.formControl{
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.arrow{
+    width: 35px;
+    height: 25px;
+}
+.formWrap{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.imgNigga{
+    position: absolute;
+    width: 45%;
+    height: 110%;
+    bottom: -49px;
 }
 
-.formEImg{
+.contactMediaIco{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+.linkMedia{
+    margin-top: -20px;
+    color: #db780e;
+    font-size: 3em;
+}
+input[type=text],
+input[type=email],
+textarea{
+    color: #FFF;
+}
+/*END INDEX*/
+
+
+/*CONTACT*/
+.contactHeader{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../img/contact/contactBg.png);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.bannerContactMedia{    
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.contactMediaTitle{
+    font-size: 4.5em;
+    color: #db780e;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.contactLinkMedia{
+    font-size: 3em;
+    color: #FFF;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.9);
+    margin-top: -25px;
+}
+.formControl-2{
+    height: 70vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+}
+.contactForm{
+    background-color: #222222;
+    width: 100%;
+    height: 100%;
+    padding-top: 15vh;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+}
+.workWith{
+    position: absolute;
+    left:10%;
+    top:9%;
+}
+.word-1{
+    font-size: 6.5em;
+    color: #8dc7e0;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    z-index: 11;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.5);
+}
+.word-2{
+    font-size: 5.5em;
+    margin-left:300px;
+    color: rgb(219, 120, 14);
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    z-index: 20;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.5);
+}
+.locWrap{
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 25px;
+}
+.locationIco{
+    margin-top: 13px;
+    margin-right: 10px;
+    height: 45px;
+    width: 30px;
+}
+.location{
+    font-size: 18px;
+    color: gray;
+}
+.formContact{
+    position: absolute;
+    top: 30%;
+    width: 500px;
+    height: 400px;
+    background-color: #FFF;
+}
+.imgNigga-2{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    bottom: -5px;
+    z-index: -1;
+}
+/*END CONTACT*/
+
+/*FOOTER*/
+.page-footer{
+    background-color: #8dc7e0;
+}
+.terminos{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse;
 }
-.imgContact{
-    width: 45%;
+.terminosFont{
+    font-size: 16px;
+    margin: 0 10px;
 }
-.imgNigga{
-    width: 100%;
-}
+/*END FOOTER*/
 
-.form{
-    width: 45%;
-    
-}
+
 
 @media screen and (max-width: 1000px){
     
     .bgText h2{
         font-size: 3em;
+        letter-spacing: 13px;
     }
     .bgText p{
-        font-size: 25px;
+        font-size: 1.5em;
     }
-    .articleImg{
-        width: 100%;
+    .logo{
+        width: 250px;
+        height: 150px;
     }
     .sectionTitle{
-        margin-top: 25px;
         font-size: 1.5em;
-        margin-left: 0;
-    }
-    .moreBooks{
-        font-size: 1.5em;
-        margin-top: 30px;
-    }
-    .imgContact{
-        display: none;
-    }
-    .form{
-        width: 90%;
-        margin-top: 10%;
-        margin-left: 11%;
-    }
-    .contact{
-        display: block;
+        margin-left: -25px;
     }
     .articleIcon{
-       bottom: 34%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 75px;
+        width: 75px;
+    
     }
+    .imgNgg{
+        display: none;
+    }
+    .imgNigga{
 
-    .contact{
-        height: 90vh;
+        display: none;
+        width: 90%;
+        height: 90%;
     }
-        
+    .formContact{
+        width: 80%;
+        height: 100%;
+        top: 20%;
+    }
+    .word-1{
+        font-size: 5em;
+    }
+    .word-2{
+        font-size: 4em;
+    } 
+    .contactMediaTitle{
+        font-size: 4em;
+    }
+    .contactLinkMedia{
+        font-size: 2.5em;
+    }     
+    .contactMediaIco{
+        width: 45px;
+        height: 45px;
+    }
+      
+}
+@media screen and (max-width: 750px){
+    .bgText h2{
+        font-size: 2em;
+        letter-spacing: 10px;
+        margin-bottom: -15px;
+    }
+    .bgText p{
+        font-size: 1em;
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+    }
+    .word-1{
+        font-size: 4em;
+    }
+    .word-2{
+        font-size: 3.5em;
+        margin-left:150px;
+    } 
+    .formContact{
+        top: 15%;
+    }
+    .locationIco{
+        height: 40px;
+        width: 25px;
+    }
+    .location{
+        font-size: 16px;
+    }
+    .contactMediaTitle{
+        font-size: 3.5em;
+    }
+    .contactLinkMedia{
+        font-size: 2em;
+    }   
+    .contactMediaIco{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media screen and (max-width: 600px){
-    
     .bgText h2{
-        font-size: 2em;
+        font-size: 1.8em;
+        letter-spacing: 7px;
     }
     .bgText p{
-        font-size: 18px;
+        font-size: 1em;
     }
+    .logo{
+        width: 125px;
+        height: 85px;
+    }
+
     .articleIcon{
-       bottom: 46%;
+        height: 50px;
+        width: 50px;
     }
+    .logoFoo{
+        width: 100%;
+        
+    }
+    .word-1{
+        font-size: 3em;
+    }
+    .word-2{
+        font-size: 2.5em;
+        margin-left:100px;
+    }
+    .workWith{
+        top:15%;
+    }
+    .formContact{
+        top: 10%;
+    }
+    .locationIco{
+        height: 35px;
+        width: 20px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .contactMediaTitle{
+        font-size: 3em;
+    }
+    .contactLinkMedia{
+        font-size: 1.5em;
+    }  
+    .contactMediaIco{
+        width: 30px;
+        height: 30px;
+    }
+    
 }
 
 @media screen and (max-width: 500px){
-    .articleIcon{
-        bottom: 47%;
-     }
-}
-@media screen and (max-width: 400px){
-    .articleIcon{
-        bottom: 55%;
-     }
+    
+    .word-1{
+        font-size: 2.5em;
+    }
+    .word-2{
+        font-size: 2em;
+        margin-left:75px;
+    }
+    .workWith{
+        left: 5%;
+    }
+    .locationIco{
+        height: 30px;
+        width: 15px;
+    }
+    .location{
+        font-size: 12px;
+    }
+    
+    .contactMediaTitle{
+        font-size: 2.5em;
+    }
+    .contactLinkMedia{
+        font-size: 1.5em;
+    }
+    
 }
 
+
 @media screen and (max-width: 350px){
-    .articleIcon{
-        bottom: 65%;
-     }
+    .logo{
+        width: 125px;
+        height: 75px;
+    }
+    .word-1{
+        font-size: 2em;
+        letter-spacing: 13px;   
+    }
+    .word-2{
+        font-size: 1.75em;
+        margin-left:30px;
+        letter-spacing: 13px;
+    }
+    .btn-burger,
+    .btn-burger::before,
+    .btn-burger::after{
+        width: 20px;
+        height: 1.5px;	
+    
+    }
+    .contactMediaTitle{
+        font-size: 2em;
+    }
+    .contactMediaIco{
+        width: 25px;
+        height: 25px;
+    }
+    
+
+    
 }

@@ -10,11 +10,12 @@
 </head>
 
 <body>
-    <header>
-        <nav class="transparent black-text" style="box-shadow: initial">
+    <!-- HEADER -->
+    <header class="indexHeader">
+        <nav class="transparent black-text">
             <div class="container nav-wrapper">
-                <a href="index.html" class="brand-logo logo"><img src="img/LOGO VERT.png" alt="" width="250"
-                        height="150"></a>
+                <a href="index.html" class="brand-logo"><img src="img/LOGO VERT.png" alt="" width="250" height="150"
+                        class=" logo"></a>
                 <a href="#" data-target="menu-responsive" class="sidenav-trigger right">
 
                     <div class="menu-btn">
@@ -22,216 +23,255 @@
                     </div>
                 </a>
                 <ul id="menu" class="right">
-                    <li><a href="" class="active">INICIO</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">SOBRE MI</a></li>
-                    <li><a href="">MIS PRODUCTOS</a></li>
-                    <li><a href="">CONTACTO</a></li>
+                    <li><a href="index.html" class="active">INICIO</a></li>
+                    <li><a href="src/blog/blog.html">BLOG</a></li>
+                    <li><a href="src/sbout/about.html">SOBRE MI</a></li>
+                    <li><a href="src/products/products.html">MIS PRODUCTOS</a></li>
+                    <li><a href="src/contacto/contacto.html">CONTACTO</a></li>
                 </ul>
 
             </div>
         </nav>
         <ul class="sidenav" id="menu-responsive">
-            <li><a href="" class="active">INICIO</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">SOBRE MI</a></li>
-            <li><a href="">MIS PRODUCTOS</a></li>
-            <li><a href="">CONTACTO</a></li>
+            <li><a href="index.html" class="active">INICIO</a></li>
+            <div class="divider"></div>
+            <li><a href="src/blog/blog.html">BLOG</a></li>
+            <div class="divider"></div>
+            <li><a href="src/sbout/about.html">SOBRE MI</a></li>
+            <div class="divider"></div>
+            <li><a href="src/products/products.html">MIS PRODUCTOS</a></li>
+            <div class="divider"></div>
+            <li><a href="src/contacto/contacto.html">CONTACTO</a></li>
+            <div class="divider"></div>
         </ul>
         <div class="bgText">
             <h2>Manuel Pérez</h2>
             <p>Escritor | Blogger | Youtuber</p>
         </div>
     </header>
+    <div class="divider"></div>
 
-    <div class="container">
-        <h2 class="sectionTitle">| Articulos</h2>
-        <div class="section">
-            <div class="col">
-                <div id="card" class="card horizontal">
-                    <div class="card-image">
-                        <img src="img/sample_1.jpg" alt="" class="articleImg">
-                    </div>
-                    <img src="img/articulo.png" alt="" class="articleIcon">
+    <!-- seccion nuevas entradas -->
+    <div class="entradas section">
 
-                    <div class="card-content">
-                        <h3 class="card-title orange-text title">Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
-                            cum
-                            mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
-                            recusandae quas cum fuga?</p>
+        <div class="container">
+            <h2 class="sectionTitle">| Articulos</h2>
+            <div class="section row">
+                <div id="" class="col">
+                    <div id="card" class="card horizontal cardHeight">
+                        <div class="card-image">
+                            <img src="img/index/sample_1.jpg" alt="" class="articleImg">
+                        </div>
+                        <img src="img/index/articulo.png" alt="" class="articleIcon">
 
-                        <div class="card-action">
-                            <a href="" class="btn orange">Leer Más</a>
+                        <div class="card-content">
+                            <h3 class="card-title orange-text title">Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur
+                                sed
+                                cum
+                                mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis
+                                iusto
+                                recusandae quas cum fuga?</p>
+
+                            <div class="card-action">
+                                <a href="" class="btn waves-effect waves-light orange right">Leer Más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <h2 class="sectionTitle">| Podcasts</h2>
-        <div class="section">
-            <div class="col">
-                <div id="card-2" class="card horizontal">
-                    <div class="card-image">
-                        <img src="img/sample_2.jpg" alt="" class="articleImg">
-                    </div>
-                    <img src="img/podcast.png" alt="" class="articleIcon">
+        </div>  
+        
+        <div class="container">  
+            <h2 class="sectionTitle">| Podcasts</h2>
+            <div class="section">
+                <div class="col">
+                    <div id="card-2" class="card horizontal cardHeight">
+                        <div class="card-image">
+                            <img src="img/index/sample_2.jpg" alt="" class="articleImg">
+                        </div>
+                        <img src="img/index/podcast.png" alt="" class="articleIcon">
 
-                    <div class="card-content">
-                        <h3 class="card-title orange-text title">Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
-                            cum
-                            mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
-                            recusandae quas cum fuga?</p>
+                        <div class="card-content">
+                            <h3 class="card-title orange-text title">Lorem, ipsum dolor.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur
+                                sed
+                                cum
+                                mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis
+                                iusto
+                                recusandae quas cum fuga?</p>
 
-                        <div class="card-action">
-                            <a href="" class="btn orange">Leer Más</a>
+                            <div class="card-action">
+                                <a href="" class="btn waves-effect waves-light orange right">Leer Más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="center">
-            <a href="#" class="moreBooks">Ver Mas Articulos</a>
+            <div class="center">
+                <a href="#" class="more">Ver Mas Articulos <img src="img/index/arrow.png" class="arrow"></a>
+            </div>
         </div>
     </div>
+    <div class="divider"></div>
 
-    <div class="container">
-        <div class="center a">
-            <h2 class="sectionTitle">Libros</h2>
-        </div>
-        <div class="row">
-            <div id="book" class="col s4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/book.png" alt="">
+    <div class="entradas section">
 
+        <div class="container">
+            <h2 class="tituloBook center">Libros</h2>
+            <div class="row">
+                <div class="col s4 center cardGrow">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/index/book.png" alt="" class="portadaBook">
+    
+                        </div>
+    
+                        <div class="card-content">
+                            <h3 class="card-title center ">Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
+                                cum
+                                mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
+                                recusandae quas cum fuga?</p>
+    
+                            <div class="card-action ">
+                                <a href="" class="col s12 btn waves-effect waves-light orange ">Leer Más</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="card-content">
-                        <h3 class="card-title">Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
-                            cum
-                            mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
-                            recusandae quas cum fuga?</p>
-
-                        <div class="card-action ">
-                            <a href="" class="btn orange right">Leer Más</a>
+                </div>
+                <div class="col s4 center cardGrow">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/index/book.png" alt="" class="portadaBook">
+    
+                        </div>
+    
+                        <div class="card-content">
+                            <h3 class="card-title center">Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
+                                cum
+                                mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
+                                recusandae quas cum fuga?</p>
+    
+                            <div class="card-action ">
+                                <a href="" class="col s12 btn waves-effect waves-light orange ">Leer Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 center cardGrow">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/index/book.png" alt="" class="portadaBook">
+    
+                        </div>
+    
+                        <div class="card-content">
+                            <h3 class="card-title center">Lorem, ipsum.</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
+                                cum
+                                mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
+                                recusandae quas cum fuga?</p>
+    
+                            <div class="card-action ">
+                                <a href="" class="col s12 btn waves-effect waves-light orange ">Leer Más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="book-2" class="col s4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/book.png" alt="">
-
-                    </div>
-
-                    <div class="card-content">
-                        <h3 class="card-title">Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
-                            cum
-                            mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
-                            recusandae quas cum fuga?</p>
-
-                        <div class="card-action ">
-                            <a href="" class="btn orange right">Leer Más</a>
-                        </div>
-                    </div>
-                </div>
+    
+            <div class="center">
+                <a href="#" class="more">Ver Mas libros  <img src="img/index/arrow.png" class="arrow"></a>
             </div>
-            <div id="book-3" class="col s4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="img/book.png" alt="">
-
-                    </div>
-
-                    <div class="card-content">
-                        <h3 class="card-title">Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis incidunt consectetur sed
-                            cum
-                            mollitia illo aperiam blanditiis esse? Soluta perspiciatis ad fugiat neque aut nobis iusto
-                            recusandae quas cum fuga?</p>
-
-                        <div class="card-action ">
-                            <a href="" class="btn orange right">Leer Más</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="center">
-            <a href="#" class="moreBooks">Ver Mas libros</a>
         </div>
     </div>
+    <div class="divider"></div>
 
-    <div class="container contact">
+    <div class="form">
         <div class="center section">
-            <h2 class="contactTitle">contactame</h2>
+            <h2 class="contactTitle tituloBook">contactame</h2>
         </div>
-
-        <div class="formEImg">
-            <div class="row form">
-                <div class="col s10 card transparent">
-                    <form action="">
-                        <div class="input-field col s6">
-                            <input type="text" id="nombre" class="validate" required>
-                            <label for="nombre">Nombre:</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input type="text" id="apellido" class="validate" required>
-                            <label for="apellido">Apellido:</label>
-                        </div>
-                        <div class="input-field col s12">
-                            <input type="email" id="correo" class="validate" required>
-                            <label for="correo">Correo:</label>
-                        </div>
-
-                        <textarea class="materialize-textarea" placeholder="Escribeme lo que quieras"></textarea>
-
-
-                        <button class="btn orange" type="submit">Enviar</button>
-
-                    </form>
+        <div class="formControl">
+            <div class="container section imgNgg">
+                <div class="imgContact">
+                    <img src="img/index/contact.png" alt="" class="imgNigga">
                 </div>
             </div>
+            <div class="container section">
+                <div class="formWrap">
+                    <div class="row form">
+                        <div class="col s12 card transparent">
+                            <form action="">
+                                <div class="input-field col s6">
+                                    <input type="text" id="nombre" class="validate" required>
+                                    <label for="nombre">Nombre:</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input type="text" id="apellido" class="validate" required>
+                                    <label for="apellido">Apellido:</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <input type="email" id="correo" class="validate" required>
+                                    <label for="correo">Correo:</label>
+                                </div>
+        
+                                <textarea class="materialize-textarea" placeholder="Escribe tu mensaje." maxlength="200"></textarea>
+        
+                                <br>
+                                <br>
+                                <button class="col s12 btn waves-effect waves-light orange "type="submit">Enviar</button>
+        
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="img/index/ig.png" alt="" class="contactMediaIco">
+                        
+                        <img src="img/index/tw.png" alt="" class="contactMediaIco">
+                        
+                        <img src="img/index/fb.png" alt="" class="contactMediaIco">
+                    </div>
+                    <div class="row">
+                        <h3 class="center linkMedia">@manuelperez</h3>
+                    </div>
 
-            <div class="imgContact">
-                <img src="img/contact.png" alt="" class="imgNigga">
-            </div>
-
-            <div class="formRedes">
-                <!-- insentar iconos de redes sociales aqui v: -->
-
+                </div>
             </div>
         </div>
-
+        
+       
     </div>
+        
 
-    <footer class="page-footer orange">
+    <footer class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <img src="img/LOGO HOR.png" alt="">
-
+                    <img src="img/LOGO HOR.png" alt="" class="logoFoo">
                 </div>
-                <div class="col l4 offset-l2 s12">
+
+                <div class="col l2 offset-l1 s6">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Inicio</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Sobre Mi</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Mis Productos</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Contacto</a></li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Inicio</a></li>
+                        <li><a class="grey-text text-lighten-3" href="src/blog/blog.html">Blog</a></li>
+                        <li><a class="grey-text text-lighten-3" href="src/about/about.html">Sobre Mi</a></li>
+                        <li><a class="grey-text text-lighten-3" href="src/products/products.html">Mis Productos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="src/contacto/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
+                <div class="container center">
+                    <a href="" class="white-text terminosFont"> Terminos de uso</a><span>|</span>
+                    <a href="" class="white-text terminosFont"> Politicas de privacidad</a><span>|</span>
+                    <a href="" class="white-text terminosFont"> Terminos de uso </a>
+                    
+                </div>
                 <div class="center">
 
                     &copy; manuel pérez productions
