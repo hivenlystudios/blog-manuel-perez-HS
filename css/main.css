@@ -5,10 +5,16 @@
 header{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/bg.jpg);
+    /*background-image: url(../img/bg.jpg);*/
     background-position: center center;
     background-size: cover;
     position: relative;
+}
+
+.header-blog {
+    height: 60vh;
+    background-image: url('../img/Capa 1.png');
+    background-position: center 80%;
 }
 
 .menu-btn{
@@ -48,7 +54,6 @@ header{
 .btn-burger::after{
 	transform: translateY(9px);
 }
-
 
 .logo{
     margin-top: 20px;
@@ -98,7 +103,8 @@ header{
     margin-left: -75px;
 }
 .title{
-    letter-spacing: 2px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
 .moreBooks{
@@ -215,4 +221,91 @@ header{
     .articleIcon{
         bottom: 65%;
      }
+}
+
+/*header-main*/
+.header-main {
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+/*Sections*/
+.title-section {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.info-section {
+    width: 90%;
+    font-size: 1.2em;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+section .tags {
+    margin: 0 auto;
+}
+
+section .tag {
+    font-size: 1.3em;
+    color: gray;
+    margin: 0 10px;
+}
+
+.footer-section {
+    position: absolute;
+    line-height: 1;
+    margin: 0 auto;
+}
+
+.footer-section p {
+    position: relative;
+}
+
+.footer-section p.read-more{
+    top: -55px;
+    left: 50vh;
+    padding: 2px 8px 2px 4px;
+    border: 5px solid orange;
+    color: orange;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-section p.read-more:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease 0.2s;
+    /*-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+    -webkit-transition: -webkit-transform 1s ease-in-out 0.5s;*/
+}
+
+/*filters*/
+.filters {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.filters .filter-title {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.filters .btn-filter{
+    width: 100%;
+    margin: 2px auto;
+}
+
+.filters .btn-filter[3] {
+    margin-bottom: 100px;
+    color: black;
 }
