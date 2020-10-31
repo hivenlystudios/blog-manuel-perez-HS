@@ -4,11 +4,13 @@ $(function(){
     
     if(ancho < 1000){
         $("#menu").addClass("hide-on-med-and-down");
-        $("#card").removeClass("horizontal");
-        $("#card-2").removeClass("horizontal");
-        $("#book").removeClass("s4").addClass("s12");
-        $("#book-2").removeClass("s4").addClass("s12");
-        $("#book-3").removeClass("s4").addClass("s12");
+        $("#card").removeClass("horizontal").removeClass("cardHeight");
+        $("#card-2").removeClass("horizontal").removeClass("cardHeight");
+        $(".cardGrow").removeClass('s4').addClass('s6')
+    
+    }
+    if(ancho < 500){
+        $(".cardGrow").removeClass('s4').addClass('s12')
     
     }
 
