@@ -10,7 +10,9 @@ nav{
     box-shadow: initial;
 }
 /*boton menu responsive*/
->>>>>>> Daniel
+
+
+
 .menu-btn{
     position: relative;
     justify-content:center;
@@ -136,8 +138,6 @@ nav{
     left: 0;
     height: 100px;
     width: 100px;
-
->>>>>>> Daniel
 }
 
 .more{
