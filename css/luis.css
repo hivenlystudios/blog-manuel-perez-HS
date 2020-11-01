@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header de la pagina*/
+.blogHeader {
+    background-image: url(../img/Blog/Capa\ 1.png);
+    height: 50vh;
+    max-height: 70vh;
+    background-position: center;
+}
+
+/*------------Principal----------------*/
+/*Header Main*/
+.header-main {
+    margin-bottom: 10vh;
+}
+
+/*titulos*/
+.header-main h2 {
+    width: 105%;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.header-main h3 {
+    width: 105%;
+    color: #8dc7e0;
+    text-transform: capitalize;
+}
+
+
+
+/*--------------Contenido Principal-----------------*/
+/*Titulo de seccion*/
+.content-section h2.title-section {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*Contenido de la seccion*/
+.content-section p{
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+/*Tags Sections*/
+.content-section .tags {
+    margin: 10px 0;
+}
+
+.content-section .tags .tag {
+    color: #8dc7e0;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    border-radius: 50%;
+    transition: .3s ease .1s;
+}
+
+.tags .tag:hover {
+    background-color: #8dc7e0;
+    color: gray!important;
+    cursor: pointer;
+}
+
+/*Footer section*/
+.content-section .footer-section {
+    position: absolute;
+}
+
+.footer-section p {
+    position: relative;
+}
+
+.autor {
+    margin-bottom: 3px;
+}
+
+.read-more {
+    width: 80%;
+    top: -35px;
+    left: 200%;
+    padding: 2px 3px 2px 4px;
+    border: 4px solid orange;
+    color: orange;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s ease .1s;
+}
+
+.read-more:hover {
+    background-color: orange;
+    color: white;
+}
+
+/*----------------Filtros de contenido--------------------*/
+.filters {
+    width: 100%;
+}
+
+.filters .filter-title {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.filters a.btn-filter {
+    width: 75%;
+    margin-bottom: 3px;
+    background-color: #8dc7e0;
+}
+
+.filters a.btn-filter:nth-child(4) {
+    margin-bottom: 10px;
+}
+
+/*-------------Resto del contenido--------------*/
+.secundario {
+    padding: 5vh;
+}
+
+.secundario:nth-child(2n) {
+    background-color: #fff2db;
+}
+
+.secundario section img.image-section {
+    width: 30%;
+}
+
+.secundario h2.title-section {
+    margin-left: 10px;
+}
+
+.secundario .footer-section p.read-more {
+    left: 250%;
+}
+
+
+/*-------------------Pagination----------------*/
+.pagination a.active {color: #b3e8ff;}
+.pagination a:not(.active){
+    color:gray;
+}
+
+.pagination {
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.pagination a{
+    color: #8dc7e0;
+    padding: 8px 16px;
+    transition: background-color .3s;
+    margin: 15px 5px;
+    border-radius: 40%;
+    font-size: 1.3em;
+}
+
+.pagination a:hover {
+    background-color: #8dc7e0;
+    color: gray;
+}
+
+/*-------------FOOTER MAIN----------*/
+/*Redes*/
+.footer-main .redes {
+    margin-bottom: 20px;
+}
+
+.footer-main .redes img{
+    width: 35px;
+    margin: 0 20px;
+}
+
+.footer-main a.name{
+    width: 23%;
+    font-size: 2em;
+    color: orange;
+    text-transform: lowercase;
+}
