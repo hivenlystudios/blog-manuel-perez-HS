@@ -1,14 +1,43 @@
+
+/*------------------Geneeral------------------*/
 * {
     margin: 0;
     padding: 0;
 }
 
 /*Header de la pagina*/
+header.header {
+    background-position: center center;
+}
+
+/*Redes*/
+.redes {
+    margin-bottom: 20px;
+}
+
+.redes img{
+    width: 35px;
+    margin: 0 20px;
+}
+
+a.name{
+    width: 23%;
+    font-size: 2em;
+    color: orange;
+    text-transform: lowercase;
+}
+
+/*Resaltador*/
+i.frase, .resaltador {
+    color: #8dc7e0;
+}
+
+
+/*Encabezado de la pagina Blog*/
 .blogHeader {
-    background-image: url(../img/Blog/Capa\ 1.png);
-    height: 50vh;
     max-height: 70vh;
-    background-position: center;
+    height: 50vh;
+    background-image: url(../img/Blog/Capa\ 1.png);
 }
 
 /*------------Principal----------------*/
@@ -30,8 +59,6 @@
     color: #8dc7e0;
     text-transform: capitalize;
 }
-
-
 
 /*--------------Contenido Principal-----------------*/
 /*Titulo de seccion*/
@@ -169,19 +196,87 @@
 }
 
 /*-------------FOOTER MAIN----------*/
-/*Redes*/
-.footer-main .redes {
-    margin-bottom: 20px;
+
+/*----------------------------------------------------*/
+/*-----------------Mis Productos----------------------*/
+/*----------------------------------------------------*/
+
+/*-----------------Header----------------------------*/
+.indexMyProducts {
+    height: 100vh;
+    max-height: 120vh;
+    background-image: url(../img/MisProductos/background-header.png);
 }
 
-.footer-main .redes img{
-    width: 35px;
-    margin: 0 20px;
+/*-----------------header footer---------------------*/
+
+/*name*/
+header footer.footer-header .name {
+    color: white;
+    font-size: 1.5em;
 }
 
-.footer-main a.name{
-    width: 23%;
-    font-size: 2em;
+/*---------------------Main Mis Productos---------------------*/
+/*-------Seccion - Quien soy---------*/
+section.whoami {
+    background-color: black;
+    position: relative;
+    height: 1100px;
+    max-height: 1150px;
+}
+
+/*Imagen*/
+img.img-position1,img.img-position2 {
+	position: absolute;
+	width: 33%;
+}
+
+img.img-position1 {
+	top: 50px;
+	left: 150px;
+}
+
+img.img-position2 {
+	bottom: 0;
+	right: 150px;
+}
+
+/*hgroups*/
+.content-whoami .first-hgroup-whoami h1,
+.content-whoami .second-hgroup-whoami h1 {
     color: orange;
-    text-transform: lowercase;
+}
+
+.first-hgroup-whoami h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 8vh auto 2vh auto;
+}
+
+.first-hgroup-whoami h2 {
+    color:white;
+    text-transform: initial;
+    font-size: 1.5em;
+    margin: 0 auto 4vh auto;
+}
+
+.second-hgroup-whoami h1 {
+	width: 75%;
+	margin-left: 10vh;
+	font-size: 3em;
+	text-align: left;
+}
+
+.second-hgroup-whoami h1 span.resaltador {
+	letter-spacing: 5px;
+	font-size: .8em;
+	margin-left: 10vh;
+}
+
+/*content-whoami*/
+.content-whoami p.parrafo {
+    width: 80%;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
