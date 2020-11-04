@@ -8,6 +8,7 @@
 /*Header de la pagina*/
 header.header {
     background-position: center center;
+    position: relative;
 }
 
 /*Resaltador*/
@@ -16,7 +17,7 @@ i.frase, .resaltador {
 }
 
 /*Color orange*/
-div.name a,
+header#indexMyProducts .frase p, div.name a,
 .content-whoami .first-hgroup-whoami h1,.content-whoami .second-hgroup-whoami h1,
 .adicional hgroup h1, section.adicional hgroup h2,
 .thanks {
@@ -221,18 +222,32 @@ div.name a{
 /*----------------------------------------------------*/
 
 /*-----------------Header----------------------------*/
-.indexMyProducts {
+header#indexMyProducts {
     height: 100vh;
     max-height: 120vh;
     background-image: url(../img/MisProductos/background-header.png);
 }
 
-/*-----------------header footer---------------------*/
+header#indexMyProducts .frase {
+    position: absolute;
+    bottom: 25vh;
+    left: 35vh;
+}
 
-/*name*/
-header footer.footer-header .name {
-    color: white;
-    font-size: 1.5em;
+header#indexMyProducts .frase p {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-shadow: 0 0 5px black;   
+}
+
+header#indexMyProducts .frase p.cite{
+    font-size: 2.3em;
+}
+
+header#indexMyProducts .social-networks {
+    position: absolute;
+    bottom: 0;
+    left: 35vh;
 }
 
 /*---------------------Main Mis Productos---------------------*/
