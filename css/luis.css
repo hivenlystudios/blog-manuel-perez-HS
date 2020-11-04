@@ -305,3 +305,13 @@ section.datos p span {
     color: white;
     text-transform: none;
 }
+
+/*------------Seccion relleno-----------*/
+section.relleno {
+    padding: 50px 0 10px 0;
+}
+
+section.relleno p {
+    text-align: justify;
+    font-size: 1.2em;
+}
