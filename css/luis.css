@@ -235,7 +235,7 @@ header#indexMyProducts .frase {
 header#indexMyProducts .frase p {
     text-transform: uppercase;
     font-size: 3em;
-    text-shadow: 0 0 5px black;   
+    text-shadow: 0 0 5px black;
 }
 
 header#indexMyProducts .frase p.cite{
