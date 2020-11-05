@@ -1,7 +1,7 @@
 
 :root{
+    
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -10,9 +10,6 @@ nav{
     box-shadow: initial;
 }
 /*boton menu responsive*/
-
-
-
 .menu-btn{
     position: relative;
     justify-content:center;
@@ -21,6 +18,10 @@ nav{
     height: 40px;
     cursor: pointer;
     margin-top: 45px;
+}
+
+#menu li a{
+    text-shadow: 1px 1px 3px rgba(0,0,0,.9);
 }
 
 .btn-burger{
@@ -36,7 +37,7 @@ nav{
     content: '';
     position: absolute;
     width: 30px;
-    height: 2px;
+    height: 2px;    
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -50,6 +51,7 @@ nav{
 .btn-burger::after{
     transform: translateY(9px);
 }
+
 
 .logo{
     margin-top: 20px;
@@ -65,8 +67,8 @@ nav{
     width: 100%;
     height: 100vh;
     background-image: url(../img/index/bg.jpg);
-    background-position: center center;
     background-size: cover;
+    background-position: center center;
 }
 .card{
 
@@ -130,15 +132,16 @@ nav{
 
 .title{
     letter-spacing: 2px;
-}
-
+}   
 .articleIcon{
     position: absolute;
     bottom: 0;
     left: 0;
     height: 100px;
     width: 100px;
+
 }
+
 
 .more{
     font-size: 2em;
@@ -153,14 +156,13 @@ nav{
     text-transform: uppercase;
     font-size: 3em;
 }
-
 .portadaBook{
     height: 350px;
 
 }
 .btn-block{
     width: 100%;
-}
+} 
 
 .form{
     width: 100%;
@@ -171,7 +173,6 @@ nav{
     justify-content: space-around;
     flex-direction: column;
 }
-
 .formControl{
     height: 100%;
     display: flex;
@@ -179,20 +180,20 @@ nav{
     justify-content: center;
     position: relative;
     overflow: hidden;
-}
 
+}
 .arrow{
     width: 35px;
     height: 25px;
 }
-
 .formWrap{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-}
 
+}
 .imgNigga{
     position: absolute;
     width: 45%;
@@ -217,17 +218,162 @@ textarea{
 }
 /*END INDEX*/
 
+/*ABOUT*/
+.aboutHeader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/about/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.bannerabout{
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: relative;
+
+}
+.aboutMediaTitle{
+    font-size: 4em;
+    color: #db780e;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.9);
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+}
+.aboutMediaLinks{
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+}
+.aboutMediaName{
+    position: absolute;
+    bottom: 0%;
+    left: 4%;
+
+}
+
+.about{
+    width: 100%;
+    height: 100%;
+    background-color: #2E2E2E;
+    color: #FFF;
+    position: relative;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.aboutText h3{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #db780e;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.9);
+}
+
+.aboutText h4{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.margin{
+    margin-top: 15px;
+}
+.imgUser{
+    position: absolute;
+    right: 0;
+    bottom: -49px;
+}
+.aboutText p{
+    font-size: 20px;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.aboutTextTitle .word-1{
+    font-size: 3em;
+    margin-left: 100px;
+}
+.aboutTextTitle .word-2{
+    font-size: 3em;
+    margin-left: 250px;
+    z-index: 100;
+}
+.aboutBanner{
+    background-image: url(../img/about/banner-1.png);
+    width: 100%;
+    height: 50vh;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.aboutBannerText{
+    width: 60%;
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+.aboutBannerText p{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #db780e;
+    text-shadow: 3px 3px 5px rgba(0,0,0,.9);
+
+}
+.aboutFinal{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/about/banner-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.aboutFinal h2{
+    color: #db780e;
+    text-transform: uppercase;
+}
+.aboutFinal p{
+    font-size: 16px;
+    margin: 35px 0;
+
+}
+.p{
+    background-color: #fefeff;
+    text-align: justify;
+    height: 100%;
+    padding: 35px 0;
+}
+.parrafo{
+    width: 50%;
+    text-align: right;
+}
+.thanks{
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #db780e;
+}
+.aboutMedia{
+    color: #db780e;
+    font-size: 2em;
+}
+.aboutIco{
+    height: 35px;
+    width: 35px;
+    margin-top: 100px;
+}
+
+
+/*END ABOUT*/
 
 /*CONTACT*/
 .contactHeader{
     width: 100%;
     height: 75vh;
     background-image: url(../img/contact/contactBg.png);
-    background-position: center center;
-    background-size: cover;
-    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.bannerContactMedia{
+.bannerContactMedia{    
     width: 100%;
     height: calc(100% - 100px);
     display: flex;
@@ -254,7 +400,6 @@ textarea{
     justify-content: center;
     position: relative;
     overflow: hidden;
-
 }
 .contactForm{
     background-color: #222222;
@@ -341,6 +486,7 @@ textarea{
 
 
 @media screen and (max-width: 1000px){
+    
     .bgText h2{
         font-size: 3em;
         letter-spacing: 13px;
@@ -362,6 +508,7 @@ textarea{
         left: 0;
         height: 75px;
         width: 75px;
+    
     }
     .imgNgg{
         display: none;
@@ -382,17 +529,54 @@ textarea{
     }
     .word-2{
         font-size: 4em;
-    }
+    } 
     .contactMediaTitle{
         font-size: 4em;
     }
     .contactLinkMedia{
         font-size: 2.5em;
-    }
+    }     
     .contactMediaIco{
         width: 45px;
         height: 45px;
+    }   
+
+
+    .aboutMediaTitle{
+        font-size: 3em;
+        bottom: 25%;
+        left: 5%;
     }
+
+    .aboutText h3{
+        font-size: 3em;
+    }
+    
+    .aboutText h4{
+        font-size: 1.5em;
+    }
+    .aboutText p{
+        font-size: 18px;
+    }
+    .aboutTextTitle .word-1{
+        font-size: 2.5em;
+        margin-left: 75px;
+    }
+    .aboutTextTitle .word-2{
+        font-size: 2.5em;
+        margin-left: 125px;
+    }
+    .aboutBannerText{
+        top: 5%;
+        left: 10%;
+    }
+    .aboutBannerText p{
+        font-size: 2em;
+    
+    }
+      
+    
+      
 }
 @media screen and (max-width: 750px){
     .bgText h2{
@@ -413,7 +597,7 @@ textarea{
     .word-2{
         font-size: 3.5em;
         margin-left:150px;
-    }
+    } 
     .formContact{
         top: 15%;
     }
@@ -429,11 +613,51 @@ textarea{
     }
     .contactLinkMedia{
         font-size: 2em;
-    }
+    }   
     .contactMediaIco{
         width: 35px;
         height: 35px;
     }
+
+    .aboutMediaTitle{
+        font-size: 2.5em;
+        bottom: 25%;
+        left: 5%;
+    }
+
+    .aboutText h3{
+        font-size: 2em;
+    }
+    
+    .aboutText h4{
+        font-size: 1em;
+    }
+    .imgUser{
+        position: absolute;
+        right: 0;
+        bottom: -49px;
+    }
+    .aboutText p{
+        font-size: 14px;
+    }
+    .aboutTextTitle .word-1{
+        font-size: 2em;
+        margin-left: 35px;
+    }
+    .aboutTextTitle .word-2{
+        font-size: 1.75em;
+        margin-left: 55px;
+    }
+    .aboutFinal{
+        background-image: none;
+        background-color: #F9F9F9;
+    }
+    .parrafo{
+        width: 50%;
+        text-align: justify;
+    }
+      
+    
 }
 
 @media screen and (max-width: 600px){
@@ -455,6 +679,7 @@ textarea{
     }
     .logoFoo{
         width: 100%;
+        
     }
     .word-1{
         font-size: 3em;
@@ -481,14 +706,47 @@ textarea{
     }
     .contactLinkMedia{
         font-size: 1.5em;
-    }
+    }  
     .contactMediaIco{
         width: 30px;
         height: 30px;
     }
+     .aboutMediaTitle{
+        font-size: 1.5em;
+        bottom: 25%;
+    }
+
+    .aboutText h3{
+        font-size: 1.5em;
+    }
+    
+    .aboutText h4{
+        font-size: .75em;
+        margin-bottom: 15px;
+    }
+    .aboutText p{
+        font-size: 12px;
+    }
+    .aboutTextTitle .word-1{
+        font-size: 1.25em;
+        letter-spacing: 7px;
+    }
+    .aboutTextTitle .word-2{
+        font-size: 1em;
+        letter-spacing: 7px;
+    }
+    .aboutBannerText p{
+        font-size: 1.25em;
+    
+    }
+    .aboutFinal h2{
+        font-size: 2em ;
+    }
+         
 }
 
 @media screen and (max-width: 500px){
+    
     .word-1{
         font-size: 2.5em;
     }
@@ -506,12 +764,14 @@ textarea{
     .location{
         font-size: 12px;
     }
+    
     .contactMediaTitle{
         font-size: 2.5em;
     }
     .contactLinkMedia{
         font-size: 1.5em;
     }
+    
 }
 
 
@@ -522,7 +782,7 @@ textarea{
     }
     .word-1{
         font-size: 2em;
-        letter-spacing: 13px;
+        letter-spacing: 13px;   
     }
     .word-2{
         font-size: 1.75em;
@@ -533,7 +793,8 @@ textarea{
     .btn-burger::before,
     .btn-burger::after{
         width: 20px;
-        height: 1.5px;
+        height: 1.5px;	
+    
     }
     .contactMediaTitle{
         font-size: 2em;
@@ -542,4 +803,7 @@ textarea{
         width: 25px;
         height: 25px;
     }
+    
+
+    
 }
