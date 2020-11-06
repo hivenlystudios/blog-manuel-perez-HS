@@ -489,6 +489,7 @@ textarea{
 
 
 @media screen and (max-width: 1000px){
+    
     .bgText h2{
         font-size: 3em;
         letter-spacing: 13px;
