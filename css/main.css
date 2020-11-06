@@ -119,6 +119,9 @@ nav{
     font-size: 2em;
     margin-left: -75px;
 }
+.sectionTitle span {
+    margin-right: 50px;
+}
 .articleImg{
     width: 100%;
     height: 100%;
@@ -486,7 +489,6 @@ textarea{
 
 
 @media screen and (max-width: 1000px){
-    
     .bgText h2{
         font-size: 3em;
         letter-spacing: 13px;
